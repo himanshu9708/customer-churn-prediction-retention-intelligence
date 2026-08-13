@@ -110,3 +110,73 @@ sh scripts/check_project.sh
 ```
 
 GitHub Actions runs these checks automatically for pushes and pull requests to `main`.
+
+
+# Customer Churn Prediction & Retention Intelligence
+
+## What this project does
+
+This project builds an end-to-end customer churn system that goes beyond binary churn prediction. It:
+
+1. Ingests and validates customer data.
+2. Cleans and analyzes the dataset.
+3. Engineers leakage-safe features.
+4. Trains Logistic Regression, Random Forest and XGBoost models.
+5. Evaluates models using ROC-AUC, PR-AUC, precision, recall and F1.
+6. Selects a champion model.
+7. Converts churn probabilities into customer risk tiers.
+8. Generates transparent retention recommendations.
+9. Serves predictions through FastAPI.
+10. Presents retention priorities through Streamlit.
+11. Provides Docker-based local deployment.
+12. Runs automated tests through GitHub Actions.
+
+## Quick start
+
+```bash
+pip install -r requirements.txt
+sh scripts/check_project.sh
+pytest -q
+python scripts/run_pipeline.py
+```
+
+## Run the application
+
+API:
+
+```bash
+uvicorn api.main:app --reload
+```
+
+Dashboard:
+
+```bash
+streamlit run dashboard/app.py
+```
+
+Docker:
+
+```bash
+docker compose build
+docker compose up
+```
+
+## Project architecture
+
+See `docs/architecture/README.md`.
+
+## Reproducibility
+
+See `docs/project/REPRODUCIBILITY.md`.
+
+## Important modeling notes
+
+- Accuracy is not used as the sole model-selection criterion.
+- PR-AUC and recall are emphasized because the business objective is retention.
+- Test data is kept separate from fitting and preprocessing.
+- Risk thresholds are operating assumptions and should be calibrated with real campaign economics.
+- Retention recommendations are transparent rules, not causal claims.
+
+## Current scope
+
+This repository is a local, reproducible ML application prototype. Full enterprise production deployment would additionally require authentication, secrets management, monitoring, model registry/versioning, CI/CD deployment, TLS, scaling, database migrations and operational controls.
