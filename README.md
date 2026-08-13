@@ -91,3 +91,22 @@ The actual data pipeline starts in Phase 2.
 ## Development workflow
 
 Each phase should be committed separately with a meaningful commit message. Continue to the next phase only after the current phase has been validated.
+
+## Phase 3
+Data cleaning has been implemented and validated against the uploaded CSV.
+
+## Testing
+
+Run the full test suite:
+
+```bash
+pytest -q
+```
+
+Run the structural validation:
+
+```bash
+sh scripts/check_project.sh
+```
+
+GitHub Actions runs these checks automatically for pushes and pull requests to `main`.
