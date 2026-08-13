@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    environment:
+      ENVIRONMENT: development
+      LOG_LEVEL: INFO

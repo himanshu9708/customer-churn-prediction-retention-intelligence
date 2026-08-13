@@ -1,0 +1,1 @@
+-- Analytics queries will be implemented after the database schema.
