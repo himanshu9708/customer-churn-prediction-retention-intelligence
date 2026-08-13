@@ -1,0 +1,19 @@
+column,dtype,missing_values,n_unique
+Age,float64,0,48
+Gender,object,0,2
+Tenure,float64,0,60
+Usage Frequency,float64,0,30
+Support Calls,float64,0,11
+Payment Delay,float64,0,31
+Subscription Type,object,0,3
+Contract Length,object,0,3
+Total Spend,float64,0,68363
+Last Interaction,float64,0,30
+support_calls_per_tenure,float64,0,375
+usage_per_tenure,float64,0,1106
+spend_per_tenure,float64,0,256172
+tenure_band,category,0,5
+support_call_band,category,0,4
+payment_delay_band,category,0,4
+usage_frequency_band,category,0,4
+Churn,int64,0,2
