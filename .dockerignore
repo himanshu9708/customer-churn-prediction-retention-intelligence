@@ -1,0 +1,41 @@
+# Git
+.git
+.github
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# Notebooks/tests
+.ipynb_checkpoints/
+notebooks/
+tests/
+
+# Local/generated outputs
+docs/eda_outputs/
+docs/model_results/
+docs/model_evaluation/*_permutation_importance.csv
+docs/retention/customer_retention_priorities.csv
+docs/retention/risk_tier_summary.csv
+docs/retention/recommended_action_summary.csv
+docs/retention/retention_metadata.json
+
+# Data
+data/raw/
+*.csv
+*.parquet
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
