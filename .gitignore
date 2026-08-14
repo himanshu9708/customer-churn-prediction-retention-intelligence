@@ -32,3 +32,4 @@ models/*
 
 # Logs
 *.log
+docs/retention/customer_retention_priorities.csv
