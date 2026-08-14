@@ -1,0 +1,5 @@
+risk_tier,customers,avg_churn_probability
+Critical,249962,0.9996
+High,10,0.7437
+Low,190851,0.0005
+Medium,9,0.5371

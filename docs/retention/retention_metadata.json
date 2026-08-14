@@ -1,0 +1,11 @@
+{
+  "champion_model": "xgboost",
+  "risk_thresholds": {
+    "critical": 0.8,
+    "high": 0.6,
+    "medium": 0.4
+  },
+  "rows_scored": 440832,
+  "recommendation_type": "transparent rule-based intervention",
+  "probability_source": "Phase 8 champion model"
+}
